@@ -23,7 +23,7 @@
     var config = {
       apiKey: "AIzaSyAJS4YQWU5DmESeYueG1qH1NGkjv3DncEY",
       authDomain: "fir-click-counter-7cdb9.firebaseapp.com",
-      databaseURL: "https://fir-click-counter-7cdb9.firebaseio.com",
+      databaseURL: "https://ruckus-project.firebaseio.com/",
       storageBucket: "fir-click-counter-7cdb9.appspot.com"
     };
     firebase.initializeApp(config);
@@ -37,6 +37,7 @@
     // ================================================================================
     // On Click
     $("#click-button").on("click", function() {
+    	
       // Add 1 to clickCounter
       clickCounter++;
       // **** Store Click Data to Firebase in a JSON property called clickCount *****
@@ -46,7 +47,7 @@
       database.ref().set({
         clickCount: clickCounter
       });
-      // Now! go to https://fir-click-counter-7cdb9.firebaseio.com/ to see the impact to the DB
+      // Now! go to https://https://ruckus-project.firebaseio.com// to see the impact to the DB
     });
   </script>
 </body>
